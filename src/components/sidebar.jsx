@@ -1,7 +1,7 @@
 import React from 'react'
 import './sidebar.css'
 import { Avatar } from '@material-ui/core'
-import firebase from 'firebase'
+import firebase from 'firebase'// eslint-disable-next-line
 import firebaseConfig from '../firebase'
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import FlagIcon from '@material-ui/icons/Flag';
@@ -25,32 +25,32 @@ export default function Sidebar() {
                 }
             </div>
             <div>
-                <LocalHospitalIcon/>
-                COVID-19 Information Center
+                <LocalHospitalIcon />
+                <p>COVID-19 Information Center</p>
             </div>
             <div>
                 <FlagIcon/>
-                Pages
+                <p>Pages</p>
             </div>
             <div>
                 <PeopleIcon/>
-                Friends
+                <p>Friends</p>
             </div>
             <div>
                 <MessageIcon/>
-                Messanger
+                <p>Messanger</p>
             </div>
             <div>
                 <StorefrontIcon/>
-                Marketplace
+                <p>Marketplace</p>
             </div>
             <div>
                 <VideoLibraryIcon/>
-                Videos
+                <p>Videos</p>
             </div>
             <div>
                 <ArrowDropDownIcon/>
-                Marketplace
+                <p>Marketplace</p>
             </div>
         </div>
     )

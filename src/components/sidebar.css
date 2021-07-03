@@ -8,6 +8,7 @@
     bottom: 0;
     top: 75px;
     width: 200px;
+    color: blue;
 }
 .sidebar div{
     margin: 10px;
@@ -21,4 +22,7 @@
 	.sidebar{
         display: none;
     }
+}
+p{
+    color: black;
 }
