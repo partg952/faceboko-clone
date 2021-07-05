@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+body{
+    overflow-x: hidden;
+}
 .nav-bar{
+    overflow-x: hidden;
+    z-index: 999999;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     box-shadow: 0px 0px 3px 0px black;
     display: flex;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
     align-items: center;
     justify-content: space-between;
     background-color: white;
@@ -106,11 +114,13 @@ img{
 }
 @media only screen and (max-width: 1000px){
 	.buttons{
+        overflow-x: hidden;
         background-color: white;
         position: absolute;
         display: flex;
         bottom: 0;
         left: 0;
+        right: 0;
         align-items: center;
         justify-content:center;
         right: 0;
@@ -158,6 +168,9 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+span *{
+    margin: 5px;
 }
 @media only screen and (max-width:680px){
     #close-button{

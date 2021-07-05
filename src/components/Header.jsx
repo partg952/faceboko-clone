@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import { useRef } from 'react';
+import { useRef,useState } from 'react';
 import firebase from 'firebase'// eslint-disable-next-line
 import firebaseConfig from '../firebase';
 import SearchIcon from '@material-ui/icons/Search';
@@ -19,6 +19,7 @@ import AddIcon from '@material-ui/icons/Add';
 import MenuIcon from '@material-ui/icons/Menu';
 export default function Header() {
     const Nav_Ref = useRef();
+    
     return (
         <div className='nav-bar'>
             <div className="input-and-image">
