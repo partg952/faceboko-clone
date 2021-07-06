@@ -8,6 +8,7 @@ import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 import { v4 as uuidv4 } from 'uuid';
 import { useRef } from 'react';
+import FlipMove from 'react-flip-move';
 export default function Posts() {
     const [data,setData] = useState([]);
     console.log(data)
@@ -96,6 +97,8 @@ export default function Posts() {
                     </div>
                 </span>
            </div> 
+           <FlipMove enterAnimation="elevator" leaveAnimation="elevator">
+
                     {
                         data.map(items=>{
                             return(
@@ -127,6 +130,7 @@ export default function Posts() {
                             )
                         })
                     }
+                </FlipMove>
         </div>
     )
 }
